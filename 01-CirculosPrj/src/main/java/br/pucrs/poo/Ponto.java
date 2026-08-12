@@ -4,7 +4,7 @@ public class Ponto{
     private double coordx;
     private double coordy;
 
-    public Ponto(doucle coordx, double coordy){
+    public Ponto(double coordx, double coordy){
         this.coordx = coordx;
         this.coordy = coordy;
     }
