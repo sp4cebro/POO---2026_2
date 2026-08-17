@@ -13,9 +13,16 @@ public class ItemVenda {
         return quantidade * produto.getPreco();
     }
 
+    //public String getDetalhe(){
+    //  return String.format(format: "(%d) %-15s \t %d X %6.2f  %6.2f",
+    //                               prod.getCodigo(), prod.getNome(), this.quantitdade,
+    //                               prod.getPreco(), this.getValor() );
+    //}
+
     @Override
     public String toString() {
         String saida = quantidade + "x " + produto.getNome() + " = R$ " + getValor();
         return saida;
+        //return "ItemVenda [quantidade=" + quantidade + ", prod=" + prod + "]";
     }
 }

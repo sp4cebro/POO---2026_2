@@ -38,7 +38,7 @@ public class App {
 
         // teste de criação de clientes não faz sentido criar itens venda sem vendas...
         ItemVenda i1 = new ItemVenda(3, p4);
-        ItemVenda i2 = new ItemVendap4(5, p1);
+        ItemVenda i2 = new ItemVenda(5, p1);
 
         System.out.println();
         System.out.println(i1);
