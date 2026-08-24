@@ -1,31 +1,39 @@
 package br.pucrs.poo;
 
-public class Produto{
+public class Produto {
+
     private int codigo;
     private String nome;
-    private double preco;
+    private double precoUnitario;
 
-    public Produto(int codigo, String nome, double preco){
-        this.codigo = codigo;
-        this.nome = nome;
-        this.preco = preco;
+    public Produto(int umCodigo, String umNome, double umPreco) {
+        this.codigo = umCodigo;
+        this.nome = umNome;
+        this.precoUnitario = umPreco;
     }
 
-    public int getCodigo(){
-        return codigo;
-    }
-
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public double getPreco(){
-        return preco;
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public double getPreco() {
+        return precoUnitario;
+    }
+
+    public void setPreco(double novoPreco) {
+        precoUnitario = novoPreco;
     }
 
     @Override
-    public String toString(){
-        String saida = "Código: "+getCodigo()+"\nNome: " +getNome()+"\nPreço(R$): "+getPreco();
-        return saida;
+    public String toString() {
+        return "Produto{" +
+                "codigo=" + getCodigo() +
+                ", nome='" + getNome() + '\'' +
+                ", preco='" + getPreco() + '\'' +
+                '}';
     }
 }
