@@ -36,6 +36,9 @@ public class App {
         cadProd.inserir(3, "lápis", 1);
         cadProd.inserir(4, "Chocolate", 10);
 
+        Cliente cliPF = new ClientePF(208, "Sra. Smith", "484.453.720-15");
+
+        cadCli.inserir(cliPF);
         // System.out.println(cadProd.toString());
 
         // teste de criação de clientes não faz sentido criar itens venda sem vendas...

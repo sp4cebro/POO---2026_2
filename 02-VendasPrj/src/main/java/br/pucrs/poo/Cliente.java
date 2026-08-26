@@ -1,5 +1,7 @@
 package br.pucrs.poo;
 
+//tentar fazer uma alteração com o "abstract" para ver as alterações práticas no código
+//e de preferência utiliza-lá para entender melhor
 public class Cliente {
     private int codigo;
     private String nome;
