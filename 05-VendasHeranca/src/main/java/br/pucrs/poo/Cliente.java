@@ -1,6 +1,6 @@
 package br.pucrs.poo;
 
-public class Cliente {
+public abstract class Cliente {
     private int codigo;
     private String nome;
 
@@ -9,6 +9,11 @@ public class Cliente {
         this.nome = umNome;
     }
 
+    public Cliente() {
+        this.codigo = -1;
+        this.nome = "Não informado";
+
+    }
     public String getNome() {
         return nome;
     }
@@ -25,7 +30,8 @@ public class Cliente {
          * ", nome='" + nome + '\'' +
          * '}';
          */
+
         return String.format("(%d) \t %s", codigo, nome);
-    }
+            }
 
 }
