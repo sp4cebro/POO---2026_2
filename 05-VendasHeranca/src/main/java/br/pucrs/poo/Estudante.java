@@ -1,28 +1,21 @@
 package br.pucrs.poo;
 
 public class Estudante extends ClientePF {
-    //private String matricula;
-    private String instituicao;
+   private String instituicao;
 
-    public Estudante(int umCodigo, String umNome, String umCPF, String umInst) {// String umMatricula
-        super(umCodigo, umNome, umCPF);
-        // this.matricula = umMatricula;
-        this.instituicao = umInst;
-    }
+  public Estudante(int umCodigo, String umNome, String umCPF, String nomeInst) {
+    super(umCodigo, umNome, umCPF);
+    this.instituicao = nomeInst;
+  }
 
-    // public String getMatricula(){ return matricula;
-    // }
 
-    public String getInstituicao() {
-        return instituicao;
-    }
+  public String getInstituicao() { return instituicao; }
 
-    @Override
-    public String toString() {
-        // ficou feio - de acordo com o sor mesmo kk
-        // return super.getCodigo() + "[cpf= "+cpf+"]";
+  @Override
+  public String toString() {
+    return super.toString() + "(" + instituicao + ")";
+  }
 
-        // reutilizando o toString da Classe Cliente
-        return super.toString() + "(" + instituicao + ")";
-    }
+
+
 }

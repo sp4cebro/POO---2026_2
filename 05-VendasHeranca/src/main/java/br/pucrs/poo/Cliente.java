@@ -9,11 +9,6 @@ public abstract class Cliente {
         this.nome = umNome;
     }
 
-    public Cliente() {
-        this.codigo = -1;
-        this.nome = "Não informado";
-
-    }
     public String getNome() {
         return nome;
     }
@@ -30,8 +25,7 @@ public abstract class Cliente {
          * ", nome='" + nome + '\'' +
          * '}';
          */
-
         return String.format("(%d) \t %s", codigo, nome);
-            }
+    }
 
 }

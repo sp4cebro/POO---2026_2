@@ -5,12 +5,12 @@ public class App {
     public static void main(String[] args) {
         // teste de criação de clientes
         Cliente c1;
-        c1 = new ClientePF(123, "Sr. Smith","3.3-3");
+        c1 = new ClientePF(123, "Sr. Smith", "3.3-3");
         Cliente c2 = new ClientePJ(321, "John Doe Inc", "1\001-1");
-        //System.out.println();
-        //System.out.println(c1.toString());
-        //System.out.println("c2: " + c2.getCodigo() + " " + c2.getNome());
-        //System.out.println();
+        // System.out.println();
+        // System.out.println(c1.toString());
+        // System.out.println("c2: " + c2.getCodigo() + " " + c2.getNome());
+        // System.out.println();
 
         CadastroClientes cadCli = CadastroClientes.getInstance();
         cadCli.inserir(c1);
@@ -19,15 +19,14 @@ public class App {
         Cliente cliPF = new ClientePF(200, "Sra. Smith", "1.1-1");
 
         cadCli.inserir(cliPF);
-        cadCli.inserir( new Estudante(201, "Huguinho", "2.2-2", "PUCRS"));
+        cadCli.inserir(new Estudante(201, "Huguinho", "2.2-2", "PUCRS"));
 
-       // System.out.println("pf nome: "+cliPF.getNome());
-       // System.out.println("pf cpf: "+cliPF.getCPF());
-       // System.out.println("pf tostr: "+cliPF.toString());
-       // System.out.println();
+        // System.out.println("pf nome: "+cliPF.getNome());
+        // System.out.println("pf cpf: "+cliPF.getCPF());
+        // System.out.println("pf tostr: "+cliPF.toString());
+        // System.out.println();
 
-
-        //CadastroClientes outroCad = CadastroClientes.getInstance();
+        // CadastroClientes outroCad = CadastroClientes.getInstance();
         System.out.println(cadCli);
 
         CadastroProdutos cadProd = CadastroProdutos.getInstance();
@@ -38,8 +37,8 @@ public class App {
         Produto p3 = new Produto(3, "lápis", 1);
         Produto p4 = new Produto(4, "Chocolate", 10);
 
-        //System.out.println(p1.toString());
-        //System.out.println(p4);
+        // System.out.println(p1.toString());
+        // System.out.println(p4);
 
         cadProd.inserir(1, "caneta azul", 2);
         cadProd.inserir(2, "borracha", 1.5);
