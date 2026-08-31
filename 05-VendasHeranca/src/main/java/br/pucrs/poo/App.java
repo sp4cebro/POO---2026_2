@@ -7,6 +7,9 @@ public class App {
         Cliente c1;
         c1 = new ClientePF(123, "Sr. Smith", "3.3-3");
         Cliente c2 = new ClientePJ(321, "John Doe Inc", "1\001-1");
+
+        Cliente c4 = new Estudante(067, "Sr. Estrupaditos", "6-7-6-9", "PUCRS");//novo 31.08
+        
         // System.out.println();
         // System.out.println(c1.toString());
         // System.out.println("c2: " + c2.getCodigo() + " " + c2.getNome());
@@ -15,6 +18,7 @@ public class App {
         CadastroClientes cadCli = CadastroClientes.getInstance();
         cadCli.inserir(c1);
         cadCli.inserir(c2);
+        cadCli.inserir(c4);
 
         Cliente cliPF = new ClientePF(200, "Sra. Smith", "1.1-1");
 
@@ -37,6 +41,8 @@ public class App {
         Produto p3 = new Produto(3, "lápis", 1);
         Produto p4 = new Produto(4, "Chocolate", 10);
 
+        Produto p5 = new ProdutoAlcoolico(5, "Corote", 6);//novo 31.08
+
         // System.out.println(p1.toString());
         // System.out.println(p4);
 
@@ -44,6 +50,9 @@ public class App {
         cadProd.inserir(2, "borracha", 1.5);
         cadProd.inserir(3, "lápis", 1);
         cadProd.inserir(4, "Chocolate", 10);
+
+
+        cadProd.inserir(5, "Corote", 6); //tive que pedir para a ia porque eu sem querer esqueci...
 
         System.out.println(cadProd.toString());
 
@@ -86,6 +95,16 @@ public class App {
 
         System.out.println("\n\nPróxima venda será a de número: " +
                 Venda.getProxNF());
+
+        // novo 31.08
+        Venda v4 = new Venda(cadCli.pesquisar(067));
+        v4.inserir(20, cadProd.pesquisar(5));
+
+        System.out.println(v4.getNotaFiscal());
+
+        System.out.println("\n\nPróxima venda será a de número: " +
+                Venda.getProxNF());
+
 
         // System.out.println("\n\n");
 

@@ -17,6 +17,9 @@ public abstract class Cliente {
         return codigo;
     }
 
+    //novo 31.08
+    public abstract String getID();
+
     @Override
     public String toString() {
         /*

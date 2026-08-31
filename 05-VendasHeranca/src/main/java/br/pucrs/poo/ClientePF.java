@@ -11,12 +11,17 @@ public class ClientePF extends Cliente {
     public String getCPF(){ return cpf;
     }
 
-    @Override
-    public String toString() {
+    //@Override
+    //public String toString() {
         // ficou feio - de acordo com o sor mesmo kk
         //return super.getCodigo() + "[cpf= "+cpf+"]";
 
         //reutilizando o toString da Classe Cliente
-        return super.toString() + " [cpf = " + cpf + "]";
+        //return super.toString() + " [cpf = " + cpf + "]";
+    //}
+    //novo 31.08
+    @Override
+    public String getID(){
+        return cpf;
     }
 }

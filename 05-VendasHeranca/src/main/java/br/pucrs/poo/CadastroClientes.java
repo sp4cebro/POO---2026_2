@@ -29,11 +29,11 @@ public class CadastroClientes {
         lista.add(cli);
     }
 
-   // public void inserir(int umCod, String umNome) {
-   //     Cliente novo = new Cliente(umCod, umNome);
-   //     lista.add(novo);
-   //     lista.add(new Cliente(umCod, umNome));
-   // }
+    //public void inserir(int umCod, String umNome) {
+        //Cliente novo = new Cliente(umCod, umNome);
+        //lista.add(novo);
+        //lista.add(new Cliente(umCod, umNome));
+    //}
 
     public Cliente pesquisar(int cod) {
         for (Cliente cli : lista) {
@@ -43,7 +43,15 @@ public class CadastroClientes {
         return null;
     }
 
-    // public Cliente pesquisar(String cod) {
+    //novo 31.08
+    public Cliente pesquisar(String id) {
+        for(Cliente cli : lista){
+            if(cli.getID().compareTo(id) == 0)
+                return cli;
+        }
+        return null;
+    }
+    
     // for (Cliente cli : lista) {
 
     // // ruim!!!

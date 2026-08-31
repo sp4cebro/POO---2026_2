@@ -13,14 +13,15 @@ public class ProdutoAlcoolico extends Produto {
         return taxa_trago;
     }
 
+    //conferir porque não está alterando o preço...
     public double valorTotal() {
         return super.getPreco() * taxa_trago;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + "[Preço: " + super.getPreco() + " * taxa " + getTaxa() + " = " + valorTotal() + "]";
-    }
+    //@Override
+    //public String toString() {
+        //return super.toString() + "[Preço: " + super.getPreco() + " * taxa " + getTaxa() + " = " + valorTotal() + "]";
+    //}
 }
 
 // código antigo - o mesmo feito em aula

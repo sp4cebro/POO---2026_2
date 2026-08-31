@@ -11,9 +11,14 @@ public class ClientePJ extends Cliente {
     public String getCNPJ(){ return cnpj;
     }
 
+    //@Override
+    //public String toString() {
+
+        //return super.toString() + " [cnpj = " + cnpj + "]";
+    //}
+    //novo 31.08
     @Override
-    public String toString() {
-        
-        return super.toString() + " [cnpj = " + cnpj + "]";
+    public String getID(){
+        return cnpj;
     }
 }
