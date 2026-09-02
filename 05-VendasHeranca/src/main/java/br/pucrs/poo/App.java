@@ -8,7 +8,7 @@ public class App {
         c1 = new ClientePF(123, "Sr. Smith", "3.3-3");
         Cliente c2 = new ClientePJ(321, "John Doe Inc", "1\001-1");
 
-        Cliente c4 = new Estudante(067, "Sr. Estrupaditos", "6-7-6-9", "PUCRS");// novo 31.08
+        Cliente c4 = new Estudante(067, "Sr. Alisson", "6-7-6-7", "PUCRS");// novo 31.08
 
         // System.out.println();
         // System.out.println(c1.toString());
